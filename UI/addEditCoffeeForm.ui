@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Измениене или добавление записи</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>381</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_1">
+     <attribute name="title">
+      <string>Изменить</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Название сорта</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Степень обжарки</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Помол</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Описание вкуса</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Цена, руб</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Вес упаковки, г</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="id_edit">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>10</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sort_edit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>40</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="roast_edit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>70</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="type_edit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>100</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taste_edit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>130</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="price_edit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>160</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="volume_edit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>190</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save_btn_1">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>220</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сохранить</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Добавить</string>
+     </attribute>
+     <widget class="QLineEdit" name="id_add">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>10</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sort_add">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>40</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="roast_add">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>70</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taste_add">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>130</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="volume_add">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>190</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="price_add">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>160</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="type_add">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>100</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Описание вкуса</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Цена, руб</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Название сорта</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Помол</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Степень обжарки</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Вес упаковки, г</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save_btn_2">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>220</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сохранить</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
